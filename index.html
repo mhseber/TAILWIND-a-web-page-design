@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind_Project</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-slate-950">
+    <!-- navbar gose here -->
+    <nav class="w-full h-14 bg-indigo-200 flex justify-between px-4 items-center md:px-4">
+        <div class="text-2xl text-indigo-700 font-bold">Pw Skills</div>
+        <ul class="md:flex hidden font-semibold">
+            <li class="mx-[10px] cursor-pointer:">Home</li>
+            <li class="mx-[10px] cursor-pointer:">About us</li>
+            <li class="mx-[10px] cursor-pointer:">Contact Us</li>
+        </ul>
+        <div class="hidden md:block px-2 py-2 bg-indigo-700 text-white rounded font-bold cursor-pointer">Login/Signup
+        </div>
+        <div class="md:hidden">
+            <a class="text-4xl" href="#">&#8801;</a>
+        </div>
+    </nav>
+    <!-- navbar ends here -->
+    <!-- image section start here  -->
+    <header class="w-full h-auto">
+        <img class="w-full hidden md:block" src="images/pw s.png" alt="" srcset="">
+        <img class="w-full " src="images/pw s 2.png" alt="" srcset="">
+    </header>
+    <!-- image section ends here -->
+
+    <!-- our students section -->
+    <div class="h-auto w-100 flex flex-wrap flex-col items-center text-center p-10">
+        <div class="w-full h-auto flex flex-wrap flex-col items-center ">
+            <p class="text-indigo-800 font-bold text-3xl md:text-4xl text-center">
+                "Pure Hardwork, No Shortcuts"</p>
+            <div class="w-36 h-1 border-b-4 border-yellow-400 mt-2 rounded-2xl md:mt-4 mb-12"></div>
+        </div>
+        <div class="w-full flex flex-wrap justify-evenly">
+            <div class="w-46 flex flex-col items-center mb-12">
+                <img class="w-44 h-44"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKEAAACUCAMAAADMOLmaAAAAw1BMVEX////X2N3i4uYqKlwAAD8RElCgobH///0jJVUAAADW1tb8/PzS0tISEFD39/dbW1urq6vExMQ7Ozu3t7dwcHBWVlaDg4OPj4/s7OxCQkKhoaHd3d0mJiZISEjLy8sAADUAAEi4uMTGxs4AADlXWHWqqLzMz9c5O2OLjp9BQVtzdYqDhJZ5eJEAAC2yscGXl5dlZWVTVWkyM1AoLE9ISF1qa4fEw9QsLFV2d4QWE0dqbH4bHEtMTGunqLEfHVQgIUYaGhpxqyc7AAAEQ0lEQVR4nO2ZC3OiOhSAD1FBjRtBQWN5KJYiWqu21kdV2v7/X7UJPqrXLnt3WnR35nwzAp4k4zcnJJAIgCAIgiAIgiAIgiAIgiAIgiAIgiDIn6JphwstuWZECbvdkCSxfQ0uQyFhxw22bTL3+/jF5KzEy8en9m0n3+4P5ocq80G/ne/ctp8eh2p5Lw7HFxnSjvj2gnIlDvLT59ldSGVuusNpL0xKwt50ONeEDQ3vZs+L9mNMON024tFt5oad3iKK5/M4Wi7am8i3dz8tk0OidsyAqQ8R+ahPlVH02F4so9j34/tFr5O1oJZT5qtertgLom5yl52gvAzIqqD892ZjpBsFvWKut+oquawN4VXmh9K98EmZBnzVWfGTsfFx5yaNSDFzwyL5dZkcw31+Hj0SvrKhNOifdf1pORqi4XeAhl/n3zd8punlVzdU/u4cahoJCkue9op1bUOY5Qu3alrzqxsGnUL+rzbU5utOj6S96V/dEHiXpb7qX91QyqWuRa4/2/wONAQ0/A7Q8Ov8o4ZiHjx9kOx2kM6fLphDODbc54cqvhqp/qk5EbE7P2SHurusXsDwhWw3DuVOgsaJP1isp/1NEPSnRZXvZLhalLFN/2mdG/jbja9tCyCFzA3XK2V7wcPRfb+zWcZzhYmfZ8rocR0nJfE6GIkYiFg3Xm7y/ftRuNsrCVevWQtqZPa2GarRUCQtL/LDjpYlzH+bcWDDN/9oJUCZyHN+2guGUTTYvM2+dhv/H0PRUepgNhtE/tkWknAMnrpPATsfw9yPhqKRmrkf/G6fl90/3KcvpTJH47GaAgUbaFqF0SeZ/2aGD/lf8zASNUapNYaZGwadH5LCJ/wo/Hi9I+pr4fPSpFknyNwwXuTSeMm/pJYv4swNqfI10jdNvoFL/GWDIAiCfAu8LuHgiaMtvlfkf/Dlijw0xzIAtM6AJbV0xusiwPRGPWm5P2SLUapallWhk5blOjpA40YEm02AG8eclMpJjTpw06o51Rov18Qbr2U1XIuBVzIA7PfsDc3kxKpCxnBsaOhbQy7t9JZ4fTXNhnz46rJiRRiaDZFXawwVR5TazuUMRcdSUz8YjmWc1inwGqnxI0PqyL4v15g3sfSLGFqeZ3gsySHcmAfDqr6vUAWzfmRYcWVGucO9qu3wSxiWXNc1+bnhfgg0ddAnR4bG1rDFPQvMMb9EL1MB7AwbB8OJHDHAKau5VdfhH4a2K5dWMocW2DXjwvehSFxDjAM5oBMh5hC7ZRieWz8aKY6cijyXCUNoupc1vBFDwhAf8l4GKueSxiSZeGTvfxiOxUzDxMQkDXmplLmhV5LozBRHS/Z0471WGkt1pyWnk5YnrknNBl0mt+yKTDff3XdRw0vuzuwNeaUs4GCLY7J2pxWjnCw+iOFxoElQHrmcZFg5+WbIEzsEEARBEARBEARBEARBEARBEARBEAT5I34Crj5hHDYutLoAAAAASUVORK5CYII="
+                    alt="">
+                <p class="text-3xl font-bold text-white">600+</p>
+                <p class="text-3xl font-bold text-gray-500">Different Courses</p>
+            </div>
+            <div class="w-46 flex flex-col items-center mb-12">
+                <img class="w-44 h-44"
+                    src="data:image/jpeg;base64,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"
+                    alt="">
+                <p class="text-3xl font-bold text-white">7,00,000+</p>
+                <p class="text-3xl font-bold text-gray-500">students Enrolled</p>
+            </div>
+            <div class="w-46 flex flex-col items-center mb-12">
+                <img class="w-44 h-44"
+                    src="data:image/jpeg;base64,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"
+                    alt="">
+                <p class="text-3xl font-bold text-white">10,000+</p>
+                <p class="text-3xl font-bold text-gray-500">Successful Transition</p>
+            </div>
+
+        </div>
+    </div>
+    <!-- Our students section end here -->
+
+    <!-- our product section -->
+    <div class="h-auto w-100 flex flex-wrap flex-col items-center text-center p-10">
+        <div class="w-full h-auto flex flex-wrap flex-col items-center">
+            <p class="text-indigo-800 font-bold text-3xl md:text-4xl text-center ">Our Products</p>
+            <div class="w-36 h-1 border-b-4 border-yellow-400 mt-2 rounded-2xl md:mt-4 mb-12"></div>
+        </div>
+        <div class="w-[90%] h-auto  flex flex-wrap justify-around">
+            <div class="w-64 flex flex-col items-center mb-12 border-white border-2 rounded-xl p-2">
+                <img src="images/neurolab-icon.jpeg" alt="">
+                <p class="text-3xl font-bold text-white">PW SKills lab</p>
+                <p class="text-xl font-bold text-gray-500"> Supercharge your project development with our robust lab.
+                </p>
+            </div>
+            <div class="w-64 flex flex-col items-center mb-12 ">
+                <img src="images/job img.png" alt="">
+                <p class="text-3xl font-bold text-white">Job Portal</p>
+                <p class="text-xl font-bold text-gray-500"> Use exceptional templates for a stand- out resume minus the
+                    sign up process.
+                </p>
+            </div>
+            <div class="w-64 flex flex-col items-center mb-12  p-2">
+                <img src="images/exp img.jpeg" alt="">
+                <p class="text-3xl font-bold text-white">Experience Portal</p>
+                <p class="text-xl font-bold text-gray-500"> PW SKills's self-paced experience Portal prioritises
+                    hands-on training whith 570+ internship projects.
+                </p>
+            </div>
+            <div class="w-64 flex flex-col items-center mb-12  p-2">
+                <img src="images/neurolab-icon.jpeg" alt="">
+                <p class="text-3xl font-bold text-white">Affiliate</p>
+                <p class="text-xl font-bold text-gray-500"> Explore affiliate marketing opportunities with PW Skills and
+                    attain financial freedom.
+                </p>
+            </div>
+            <div class="w-64 flex flex-col items-center mb-12  p-2">
+                <img src="images/neurolab-icon.jpeg" alt="">
+                <p class="text-3xl font-bold text-white">Hall of Fame</p>
+                <p class="text-xl font-bold text-gray-500">Our students placements and 100k+ career transitions speak
+                    volumes about our courses.
+                </p>
+            </div>
+
+        </div>
+    </div>
+    <!-- our product section ends here  -->
+
+    <!-- our footer starts here -->
+    <footer
+        class="w-full bg-gray-900 px-4 text-white pt-8 flex flex-col md:flex-row flex-wrap justify-between md:px-12">
+        <div class="">
+            <img class="w-40 h-16" src="images/main pw skills.png" alt="">
+            <p class="my_4">Email us: support@pwskills.com</p>
+            <img class="w-32 h-32" src="images/skills img.png" alt="">
+        </div>
+        <div class="">
+            <h2 class="font-bold text-xl mt-4">PW SKills</h2>
+            <div class="w-32 h-1 border-b-2 border-yellow-400 rounded-2xl my-2"></div>
+            <div>
+                <p>About us</p>
+                <p>FAQs</p>
+                <p>Privacy Policy</p>
+            </div>
+        </div>
+        <div class="">
+            <h2 class="font-bold text-xl mt-4">Products</h2>
+            <div class="w-32 h-1 border-b-2 border-yellow-400 rounded-2xl my-2"></div>
+            <div>
+                <p>PW SKills Lab</p>
+                <p>job portal</p>
+                <p>Experience Portal</p>
+                <p>Become an Affiliate</p>
+                <p>Hall of Fame</p>
+            </div>
+        </div>
+        <div class="">
+            <h2 class="font-bold text-xl mt-4">Links</h2>
+            <div class="w-32 h-1 border-b-2 border-yellow-400 rounded-2xl my-2"></div>
+            <div>
+                <p>Discord Channel</p>
+                <p>PW Youtube</p>
+                <p>Careers</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
